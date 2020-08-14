@@ -5,36 +5,36 @@ const expect = chai.expect;
 const chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 
-process.on('unhandledRejection', () => { });
+process.on('unhandledRejection', () => {});
 
 (async function example() {
+
     try {
-        describe ('Google shearch automated test', async function() {
+        describe('Google search automated test', async function () {
+
             this.timeout(50000);
             let driver, page;
 
             beforeEach(async function() {
                 page = new Page();
                 driver = page.driver;
-                await page.visit('https://www.google.com/');
+                await page.visit('https://www.google.com')
             });
 
-            afterEach(async function() {
+            afterEach( async function() {
                 await page.quit();
             });
 
-            it('should search for sodimac' , async function() {
-                const result = await page.submitKeyword('q', 'Sodimac', 'result-stats');
+            it('should search sodimac', async function() {
+                const result = await page.submitKeyword('q', 'sodimac', 'result-stats');
                 expect(result.length).to.be.above(10);
-
-            });
-
+            })
+            
         });
-
+        
     } catch (error) {
-        console.log(new Error(error.message));
-
-    } finally {
+        
+    }finally {
 
     }
 

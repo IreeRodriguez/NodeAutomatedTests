@@ -1,8 +1,17 @@
 {
-  "name": "node-automated-tests",
+  "name": "nodeautomatedtests",
   "version": "1.0.0",
-  "description": "",
+  "description": "node automated tests",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^84.0.1",
+    "mocha": "^8.1.1",
+    "mochawesome": "^6.1.1",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
   "scripts": {
     "test": "mocha test --reporter mochawesome --reporter-options autoOpen=true"
   },
@@ -15,13 +24,5 @@
   "bugs": {
     "url": "https://github.com/IreeRodriguez/NodeAutomatedTests/issues"
   },
-  "homepage": "https://github.com/IreeRodriguez/NodeAutomatedTests#readme",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
-    "chromedriver": "^84.0.1",
-    "mocha": "^8.1.1",
-    "mochawesome": "^6.1.1",
-    "selenium-webdriver": "^4.0.0-alpha.7"
-  }
+  "homepage": "https://github.com/IreeRodriguez/NodeAutomatedTests#readme"
 }

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-08-14T13:11:30.639Z",
-    "end": "2020-08-14T13:11:34.403Z",
-    "duration": 3764,
+    "start": "2020-08-14T16:21:28.823Z",
+    "end": "2020-08-14T16:21:32.912Z",
+    "duration": 4089,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1bcce977-7ce3-4f86-b4c5-06069f1d0168",
+      "uuid": "f4110eab-b105-419a-b3fb-6e022f1f201c",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,36 +27,36 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "70005edc-d07b-407b-b111-d92db2b85d99",
-          "title": "Google shearch automated test",
+          "uuid": "83b84057-1037-4a0e-8069-0f62427cd3a2",
+          "title": "Google search automated test",
           "fullFile": "/Users/ijrodriguezpa/Documents/NodeTests/NodeAutomatedTests/test/googleSearch.test.js",
           "file": "/test/googleSearch.test.js",
           "beforeHooks": [
             {
-              "title": "\"before each\" hook in \"Google shearch automated test\"",
-              "fullTitle": "Google shearch automated test \"before each\" hook in \"Google shearch automated test\"",
+              "title": "\"before each\" hook in \"Google search automated test\"",
+              "fullTitle": "Google search automated test \"before each\" hook in \"Google search automated test\"",
               "timedOut": false,
-              "duration": 1550,
+              "duration": 2026,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "page = new Page();\ndriver = page.driver;\nawait page.visit('https://www.google.com/');",
+              "code": "page = new Page();\ndriver = page.driver;\nawait page.visit('https://www.google.com')",
               "err": {},
-              "uuid": "2c348c2b-c2c9-4176-ac25-409d1522b3e3",
-              "parentUUID": "70005edc-d07b-407b-b111-d92db2b85d99",
+              "uuid": "45b25688-692e-4713-aa84-86c17f4f6e11",
+              "parentUUID": "83b84057-1037-4a0e-8069-0f62427cd3a2",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after each\" hook in \"Google shearch automated test\"",
-              "fullTitle": "Google shearch automated test \"after each\" hook in \"Google shearch automated test\"",
+              "title": "\"after each\" hook in \"Google search automated test\"",
+              "fullTitle": "Google search automated test \"after each\" hook in \"Google search automated test\"",
               "timedOut": false,
-              "duration": 52,
+              "duration": 53,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,40 +65,40 @@
               "context": null,
               "code": "await page.quit();",
               "err": {},
-              "uuid": "f349234f-9091-4779-81b1-61a94c89cdb7",
-              "parentUUID": "70005edc-d07b-407b-b111-d92db2b85d99",
+              "uuid": "53530c3b-2c41-45d0-be0f-339933f8150c",
+              "parentUUID": "83b84057-1037-4a0e-8069-0f62427cd3a2",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "should search for sodimac",
-              "fullTitle": "Google shearch automated test should search for sodimac",
+              "title": "should search sodimac",
+              "fullTitle": "Google search automated test should search sodimac",
               "timedOut": false,
-              "duration": 2158,
+              "duration": 2006,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const result = await page.submitKeyword('q', 'Sodimac', 'result-stats');\nexpect(result.length).to.be.above(10);",
+              "code": "const result = await page.submitKeyword('q', 'sodimac', 'result-stats');\nexpect(result.length).to.be.above(10);",
               "err": {},
-              "uuid": "40165e64-4c1d-4daf-9e7f-93afb2d61920",
-              "parentUUID": "70005edc-d07b-407b-b111-d92db2b85d99",
+              "uuid": "e0d10e9d-e8ae-4981-af5d-667d3df4708a",
+              "parentUUID": "83b84057-1037-4a0e-8069-0f62427cd3a2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "40165e64-4c1d-4daf-9e7f-93afb2d61920"
+            "e0d10e9d-e8ae-4981-af5d-667d3df4708a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2158,
+          "duration": 2006,
           "root": false,
           "rootEmpty": false,
           "_timeout": 50000
