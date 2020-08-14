@@ -1,0 +1,140 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-14T13:11:30.639Z",
+    "end": "2020-08-14T13:11:34.403Z",
+    "duration": 3764,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1bcce977-7ce3-4f86-b4c5-06069f1d0168",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "70005edc-d07b-407b-b111-d92db2b85d99",
+          "title": "Google shearch automated test",
+          "fullFile": "/Users/ijrodriguezpa/Documents/NodeTests/NodeAutomatedTests/test/googleSearch.test.js",
+          "file": "/test/googleSearch.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Google shearch automated test\"",
+              "fullTitle": "Google shearch automated test \"before each\" hook in \"Google shearch automated test\"",
+              "timedOut": false,
+              "duration": 1550,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page = new Page();\ndriver = page.driver;\nawait page.visit('https://www.google.com/');",
+              "err": {},
+              "uuid": "2c348c2b-c2c9-4176-ac25-409d1522b3e3",
+              "parentUUID": "70005edc-d07b-407b-b111-d92db2b85d99",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Google shearch automated test\"",
+              "fullTitle": "Google shearch automated test \"after each\" hook in \"Google shearch automated test\"",
+              "timedOut": false,
+              "duration": 52,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await page.quit();",
+              "err": {},
+              "uuid": "f349234f-9091-4779-81b1-61a94c89cdb7",
+              "parentUUID": "70005edc-d07b-407b-b111-d92db2b85d99",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should search for sodimac",
+              "fullTitle": "Google shearch automated test should search for sodimac",
+              "timedOut": false,
+              "duration": 2158,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = await page.submitKeyword('q', 'Sodimac', 'result-stats');\nexpect(result.length).to.be.above(10);",
+              "err": {},
+              "uuid": "40165e64-4c1d-4daf-9e7f-93afb2d61920",
+              "parentUUID": "70005edc-d07b-407b-b111-d92db2b85d99",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "40165e64-4c1d-4daf-9e7f-93afb2d61920"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 50000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "autoOpen": "true"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
